@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'roboto';
+  -webkit-tap-highlight-color: transparent
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+}
+
+/* CHAKRA UI FIX */
+.chakra-button__icon{
+  margin-left: 0px!important;
+}
+
+.stars{
+  position: relative;
+}
+
+
+.stars-top{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+  overflow: hidden;
+  color: #777;
+  height: 20px;
+}
+
+.stars-bottom {
+  display: flex;
+  align-items: center;
+  color: #ddd;
+  height: 20px;
+}
+
+.stars span{
+  font-size: 20px;
+}
+
+.stars span:last-child{
+  margin-right: 0;
 }
