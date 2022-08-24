@@ -8,6 +8,7 @@ const cardsData = [
   {
     title: "New & updated games",
     subTitle: "",
+    wrapper: "flex",
     items: [
       {
         img: img1,
@@ -44,7 +45,75 @@ const cardsData = [
   {
     title: "Low on space?",
     subTitle: "Lightweight games",
+    wrapper: "flex",
     items: [
+      {
+        img: img1,
+        name: "Rise of the Kings",
+        company: "ONEMT",
+        stars: "82%"
+      },
+      {
+        img: img2,
+        name: "Genshin Impact",
+        company: "miHoYo Limited",
+        stars: "90%"
+      },
+      {
+        img: img3,
+        name: "Best Fiends - Free Play",
+        company: "Seriously Digital Entertainment",
+        stars: "90%"
+      },
+      {
+        img: img4,
+        name: "Candy Crush Fiends",
+        company: "King",
+        stars: "92%"
+      },
+      {
+        img: img5,
+        name: "Arcade Showdown",
+        company: "Big Huge Games, Inc.",
+        stars: "85%"
+      }
+    ]
+  },
+  {
+    title: "Other games",
+    subTitle: "with Carousel",
+    wrapper: "carousel",
+    items: [
+      {
+        img: img1,
+        name: "Rise of the Kings",
+        company: "ONEMT",
+        stars: "82%"
+      },
+      {
+        img: img2,
+        name: "Genshin Impact",
+        company: "miHoYo Limited",
+        stars: "90%"
+      },
+      {
+        img: img3,
+        name: "Best Fiends - Free Play",
+        company: "Seriously Digital Entertainment",
+        stars: "90%"
+      },
+      {
+        img: img4,
+        name: "Candy Crush Fiends",
+        company: "King",
+        stars: "92%"
+      },
+      {
+        img: img5,
+        name: "Arcade Showdown",
+        company: "Big Huge Games, Inc.",
+        stars: "85%"
+      },
       {
         img: img1,
         name: "Rise of the Kings",

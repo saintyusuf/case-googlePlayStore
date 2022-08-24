@@ -7,7 +7,7 @@ export default function Card(props) {
   const {item, ...otherProps} = props
   
   return (
-    <Box {...otherProps} padding="6px">
+    <Box {...otherProps} padding="6px" transition="200ms all">
       <Flex width="100%" height="100%" padding="20px 0" backgroundColor="#fff" flexDir="column" borderRadius="sm" boxShadow="0 1px 4px -1px #000000aa" overflow="hidden">
           <Box padding="0 22.5px">
             <Image src={item.img} boxSize="100%"/>

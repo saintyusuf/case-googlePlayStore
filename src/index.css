@@ -10,15 +10,10 @@ body {
   margin: 0;
 }
 
-/* CHAKRA UI FIX */
-.chakra-button__icon{
-  margin-left: 0px!important;
-}
-
+/* STARS */
 .stars{
   position: relative;
 }
-
 
 .stars-top{
   display: flex;
@@ -46,4 +41,17 @@ body {
 
 .stars span:last-child{
   margin-right: 0;
+}
+
+/* SWIPER */
+.swiper{
+  padding-bottom: 30px!important;
+}
+
+.swiper .swiper-pagination{
+  bottom: -5px!important;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet-active{
+  background-color: #699f39!important;
 }
