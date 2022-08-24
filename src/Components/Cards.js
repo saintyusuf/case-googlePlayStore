@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 import {Box, Container, Heading, Flex, Button} from '@chakra-ui/react'
 import Card from './Card'
@@ -12,6 +12,19 @@ import "swiper/css/pagination"
 import cardsData from '../assets/datas/cards'
 
 export default function Cards() {
+
+  const [width, setWidth] = useState({
+    width: window.innerWidth
+  })
+
+  function resize(){
+    console.log(window.width)
+  }
+
+  useEffect(()=>{
+    window.addEventListener('resize', resize())
+  },[width])
+  
   return (
     <Box padding={{sm:"2.5px 5px",md:"25px 50px"}} width={['100%']}>
       {
@@ -37,6 +50,20 @@ export default function Cards() {
                 :
                 <Swiper
                   slidesPerView={5}
+                  breakpoints={{
+                    320: {
+                      slidesPerView: 2,
+                    },
+                    768: {
+                      slidesPerView: 3,
+                    },
+                    991: {
+                      slidesPerView: 4,
+                    },
+                    1336: {
+                      slidesPerView: 5,
+                    },
+                  }}
                   modules={[Pagination, Autoplay]}
                   pagination={{
                     clickable: true,
@@ -46,7 +73,7 @@ export default function Cards() {
                   {
                     row.items.map((item,i)=>
                       <SwiperSlide key={i}>
-                        <Card width="100%" item={item}/>
+                        <Card item={item}/>
                       </SwiperSlide>
                     )
                   }
